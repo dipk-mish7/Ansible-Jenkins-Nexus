@@ -1,6 +1,6 @@
 pipeline {
        agent {
-        label 'aws_ec2_ubuntu_label'
+        label 'Maven'
     }
 
     stages {
@@ -33,7 +33,7 @@ pipeline {
             type: 'war']], 
             credentialsId: 'nexus', 
             groupId: 'Spring3HibernateApp', 
-            nexusUrl: '52.66.186.101:8081', 
+            nexusUrl: '13.234.213.101:8081', 
             nexusVersion: 'nexus3', 
             protocol: 'http', 
             repository: 'ninja-maven-release', 
